@@ -6,6 +6,26 @@
     "nodemailer": "^6.8.0"
   },
   "scripts": {
-    "star": "node server.js"
-  }
+    "star": "node server.js",
+    "start": "node server.js"
+  },
+  "name": "backend-portafolio",
+  "description": "portafolio",
+  "version": "1.0.0",
+  "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nievas1000/Backend-Portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nievas1000/Backend-Portafolio/issues"
+  },
+  "homepage": "https://github.com/Nievas1000/Backend-Portafolio#readme"
 }
