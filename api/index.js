@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
-require('dotenv').config();
+require("dotenv").config();
 
 const port = process.env.PORT || 5000;
 
@@ -13,11 +13,11 @@ app.use(express.json());
 app.use("/", router);
 app.listen(port, () => console.log("Server Running"));
 const contactEmail = nodemailer.createTransport({
-  service: 'gmail',
+  service: "gmail",
   port: 587,
   auth: {
     user: "lautynievas09@gmail.com",
-    pass: process.env.PASSWORD
+    pass: process.env.PASSWORD,
   },
 });
 
@@ -49,3 +49,5 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+
+module.exports = app;
